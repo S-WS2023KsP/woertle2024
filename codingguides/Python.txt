@@ -1,0 +1,10 @@
+Kodierrichtlinien Python
+FOM-Vorlesung Skriptprogrammierung, 2023-09-16
+
+Sprache: Sprache der Skripte ist Englisch
+Extension: .py als Extension für Skripte
+Schreibweise Variablennamen: CamelCase gesenkter Kopf
+Leerzeichen um Operatoren: Ja, Leerzeichen sollen verwendet werden
+Klamerung: großzügig Klammern verwenden
+Kommentierung: komplexe Strukturen sollen kommentiert werden
+Shebang: soll am Anfang gesetzt werden
