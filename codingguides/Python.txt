@@ -1,16 +1,2 @@
-Kodierrichtlinien Python
-FOM-Vorlesung Skriptprogrammierung, 2023-10-07
-
-Sprache: Sprache der Skripte ist Englisch
-Extension: .py als Extension für Skripte
-Schreibweise Variablennamen: CamelCase gesenkter Kopf
-Leerzeichen um Operatoren: Ja, Leerzeichen sollen verwendet werden
-Klamerung: großzügig Klammern verwenden
-Kommentierung: komplexe Strukturen sollen kommentiert werden
-Shebang: soll am Anfang gesetzt werden
-Dokumentation: Jedes Skript wird durch ein Docstring kurz dokumentiert
-Einrückung: Es soll mit 4 Leerzeichen eingerückt werden
-Lizenz: Es soll am Anfang die Lizenz in einer Variable eingetragen werden
-Author: Es soll am Anfang der Author in einer Variable festgelegt werden
-Datum: Es soll am Anfang das Datum in einer Variable festgelegt werden
-Version: Es soll am Anfang die Skriptversion in einer Variable festgelegt werden 
+Kodierrichtlinie Python
+FOM-Vorlesung Skriptprogrammierung, 2024-09-13
