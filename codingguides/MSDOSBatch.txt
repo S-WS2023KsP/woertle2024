@@ -1,6 +1,2 @@
 Kodierrichtlinien MS-DOS Batch-Skripte
-FOM-Vorlesung Skriptprogrammierung, 2023-09-02
-
-1. Zeile: @echo off
-2. Zeile: REM Autor, Datum, Lizenz
-Nur 7-Bit-ASCII-Zeichen
+FOM-Vorlesung Skriptprogrammierung, 2024-09-13
