@@ -1,2 +1,118 @@
 Kodierrichtlinie Python
 FOM-Vorlesung Skriptprogrammierung, 2024-09-13
+
+# We have decided to use English for variable names/ comments.
+# This document outlines the coding conventions to be used in all Python files.
+# Consistency in following these conventions will improve code readability and
+# maintainability, and help avoid common errors.
+
+# IDE and File Storage
+# --------------------
+- Use Visual Studio Code (VS Code) as the Integrated Development Environment (IDE).
+- Store all project files in a GitHub repository for version control and collaboration.
+- Ensure that all scripts are saved with UTF-8 encoding to support a wide range of characters.
+
+1. Module Header
+----------------
+- Every new module must include a module header with the following information:
+  - **Module Name**: The name of the module.
+  - **Author**: The author's name
+  - **Description**: A brief description of the module's purpose and functionality.
+- Avoid including change dates or other mutable information to maintain simplicity.
+
+  Example of a module header:
+  ```python
+  # Module Name: my_module
+  # Author: [Your Name]
+  # Description: This module provides functionality for XYZ...
+
+2. Indentation
+--------------
+- Use 4 spaces per indentation level for consistency and to follow Python's
+  standard indentation practices. Avoid using tabs, as mixing tabs and spaces
+  can lead to errors and inconsistent behavior across environments.
+
+  Example:
+  def checkNumber(num):
+      if num > 0:
+          print("Positive number")
+      else:
+          print("Non-positive number")
+      # Each level is indented by 4 spaces
+
+3. Max Line Length
+------------------
+- Limit all lines to a maximum length of 79 characters. This keeps the code
+  easy to read on smaller screens or when multiple files are open side-by-side.
+  If an expression or statement exceeds this limit, split it over multiple
+  lines using parentheses, backslashes, or implied continuation.
+
+  Example:
+  longExpression = (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 +
+                    10 + 11 + 12 + 13 + 14 + 15)
+
+4. Naming Conventions
+---------------------
+- Use lowerCamelCase for naming variables and functions:
+  - Function names: def myFunction():
+  - Variable names: myVariable = 5
+
+  Example:
+  myVariable = 5  # Variable with lower camel case
+  def myFunction():  # Function with lower camel case
+      pass
+
+5. Tuples
+---------
+- Always write tuples with parentheses to avoid misunderstandings, even if not
+  strictly required by Python. This ensures clarity in complex expressions and
+  multi-variable assignments.
+
+  Example:
+  myTuple = (1, 2, 3)  # Parentheses explicitly used for a tuple
+
+  Correct use in unpacking:
+  (a, b, c) = (1, 2, 3)  # Clear use of parentheses
+
+6. Spaces Around Operators
+--------------------------
+- Always place spaces around operators (e.g., +, -, =, ==) to enhance
+  readability. This applies to both arithmetic operators and comparison
+  operators.
+
+  Example:
+  a = 5 + 3  # Spaces around operators
+  if a == 8:  # Spaces around comparison operators
+      print("Correct")
+
+7. List Comprehensions
+----------------------
+- Always comment on list comprehensions to explain what they do. This enhances
+  readability, especially when complex transformations or conditions are applied.
+
+  Example:
+  # Generate a list of squares of even numbers from 0 to 10
+  squares = [x**2 for x in range(11) if x % 2 == 0]  # List comprehension with explanation
+
+8. Commenting
+-------------
+- Use comments to explain the purpose of the code, complex logic, or
+  non-obvious decisions. Write comments in English to ensure accessibility for
+  all contributors. Ensure comments are up-to-date with the code.
+
+  Example:
+  # This function checks if the input number is positive or non-positive
+  def checkNumber(num):
+      if num > 0:
+          print("Positive number")
+      else:
+          print("Non-positive number")
+
+9. Shebang
+----------
+- Always include a shebang (`#!/usr/bin/env python3`) at the beginning of files
+  for compatibility with Unix-like systems. This ensures the correct interpreter
+  is used when executing the script directly.
+
+  Example shebang:
+  #!/usr/bin/env python3
