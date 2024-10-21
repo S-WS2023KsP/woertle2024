@@ -42,14 +42,15 @@ FOM-Vorlesung Skriptprogrammierung, 2024-09-13
 
 3. Max Line Length
 ------------------
-- Limit all lines to a maximum length of 79 characters. This keeps the code
-  easy to read on smaller screens or when multiple files are open side-by-side.
-  If an expression or statement exceeds this limit, split it over multiple
-  lines using parentheses, backslashes, or implied continuation.
+- Limit all lines to a maximum length of 79 characters. This keeps the code easy to read on smaller screens or when multiple files    are open side-by-side.
+- If an expression or statement exceeds this limit, explicitly split it over multiple lines using backslashes (\). This avoids        confusion caused by implicit line continuation using parentheses.
 
-  Example:
-  longExpression = (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 +
-                    10 + 11 + 12 + 13 + 14 + 15)
+Example with backslashes:
+
+longExpression = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + \
+                 11 + 12 + 13 + 14 + 15
+
+- Avoid using parentheses for line continuation, as the backslash provides a clearer and more explicit separation of lines.
 
 4. Naming Conventions
 ---------------------
@@ -74,7 +75,18 @@ FOM-Vorlesung Skriptprogrammierung, 2024-09-13
   Correct use in unpacking:
   (a, b, c) = (1, 2, 3)  # Clear use of parentheses
 
-6. Spaces Around Operators
+6. Operator precedence
+----------------------
+
+- Always use parentheses () to explicitly define the order of operations in expressions involving multiple operators, even when it    may not be strictly necessary according to Python's operator precedence rules. This increases clarity and reduces the likelihood    of bugs related to misunderstanding operator precedence.
+
+Example (preferred):
+result = (a + (b * c)) - d  # Clear use of parentheses
+
+Example (discouraged):
+result = a + b * c - d  # Hard to read, avoid this
+
+7. Spaces Around Operators
 --------------------------
 - Always place spaces around operators (e.g., +, -, =, ==) to enhance
   readability. This applies to both arithmetic operators and comparison
@@ -85,7 +97,7 @@ FOM-Vorlesung Skriptprogrammierung, 2024-09-13
   if a == 8:  # Spaces around comparison operators
       print("Correct")
 
-7. List Comprehensions
+8. List Comprehensions
 ----------------------
 - Always comment on list comprehensions to explain what they do. This enhances
   readability, especially when complex transformations or conditions are applied.
@@ -94,7 +106,7 @@ FOM-Vorlesung Skriptprogrammierung, 2024-09-13
   # Generate a list of squares of even numbers from 0 to 10
   squares = [x**2 for x in range(11) if x % 2 == 0]  # List comprehension with explanation
 
-8. Commenting
+9. Commenting
 -------------
 - Use comments to explain the purpose of the code, complex logic, or
   non-obvious decisions. Write comments in English to ensure accessibility for
@@ -108,7 +120,7 @@ FOM-Vorlesung Skriptprogrammierung, 2024-09-13
       else:
           print("Non-positive number")
 
-9. Shebang
+10. Shebang
 ----------
 - Always include a shebang (`#!/usr/bin/env python3`) at the beginning of files
   for compatibility with Unix-like systems. This ensures the correct interpreter
