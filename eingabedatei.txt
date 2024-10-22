@@ -1,7 +1,0 @@
-Dies ist ein Beispieltext.
-Hier ist eine weitere Zeile.
-Python ist eine großartige Programmiersprache.
-Visual Studio Code ist ein beliebter Editor.
-Einige Wörter haben fünf Zeichen.
-Andere Wörter haben mehr oder weniger Zeichen.
-Dies ist ein Test, um zu sehen, wie das Skript funktioniert.
