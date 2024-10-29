@@ -147,3 +147,13 @@ def calculateStatistics(data):
     variance = sum((x - mean) ** 2 for x in data) / len(data)
     return mean, variance ** 0.5
 
+12. Importing Modules
+---------------------
+- Avoid import ... as ... aliases unless it’s a widely used convention, such as:
+
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+
+- Unnecessary aliases reduce clarity for readers less familiar with the code!!!
