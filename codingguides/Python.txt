@@ -128,3 +128,22 @@ result = a + b * c - d  # Hard to read, avoid this
 
   Example shebang:
   #!/usr/bin/env python3
+
+11. Docstrings for Functions
+----------------------------
+
+- Use brief and concise docstrings for all functions to describe their purpose.
+- Place docstrings in triple double-quotes """ directly below the function definition.
+- Keep docstrings short and to the point to ensure quick readability.
+
+Example:
+
+def calculateStatistics(data):
+    """
+    Calculates mean and standard deviation of a list of numbers.
+
+    """
+    mean = sum(data) / len(data)
+    variance = sum((x - mean) ** 2 for x in data) / len(data)
+    return mean, variance ** 0.5
+
